@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            function Validate()
+            {
+                var fname=document.getElementById('n1').value;
+                var mob=document.getElementById("n2").value;
+                var pass=document.getElementById('n3').value;
+
+                if(fname=='')
+                {
+                    alert("Enter The Neme")
+                    return false;
+                }
+                if(length.mob<=10)
+                {
+                    alert("Enter The Correct Number");
+                    return false;
+                }
+                if(pass=='')
+                {
+                    alert("Enter The Password");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        <body>
+            <form method="post" onsubmit="return Validate()">
+                <h1>
+                    This Is Form
+                </h1>
+                Name:<input type="text" id="n1"><br>
+                MobileNumber <input type="tel" id="n2"><br>
+                Password: <input type="text" id="n3">
+                <input type="submit" value="Ok">
+            </form>
+        </body>
+    </head>
+</html>

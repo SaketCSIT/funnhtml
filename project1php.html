@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        #larger {
+            margin-top: 50px;
+        }
+
+        .para {
+            margin: 4em;
+            padding: auto;
+            text-align: center;
+            font-size: 40px;
+            position: relative;
+            font-variant: small-caps;
+        }
+
+        .center {
+            margin-right: 40px;
+            margin-bottom: 18px;
+        }
+
+        input[type="text"] {
+            font-size: 20px;
+            border-radius: 2.5px;
+            background: transparent;
+            margin-right: -40px;
+        }
+
+        input[type="checkbox"] {
+            font-size: 30px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            font-variant: small-caps;
+            background-color: transparent;
+            font-size: 20px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            font-variant: small-caps;
+            background-color: transparent;
+            font-size: 20px;
+
+        }
+
+        input[type="submit"]:hover {
+            margin-top: 20px;
+            font-variant: small-caps;
+            background-color: transparent;
+            font-size: 20px;
+            background-color: aquamarine;
+        }
+
+        input[type="tel"] {
+            margin-top: 30px;
+            font-variant: small-caps;
+            background-color: transparent;
+            font-size: 20px;
+            margin-right: 139px;
+            ;
+        }
+
+        marquee {
+            font-size: 28px;
+        }
+
+        .lower {
+            margin-top: -35px;
+
+        }
+
+        input#larger {
+            width: 30px;
+            height: 30px;
+
+        }
+    </style>
+    <script>
+        function Validate() {
+            var name_1 = document.getElementById("nam").value;
+            let number_1 = document.getElementById("num").value;
+
+            if (name_1 == "") {
+                alert("Enter The Name")
+                return false;
+            }
+
+            if (number_1 == "") {
+                alert("Enter The Mobile Number")
+                return false;
+            }
+
+            return true;
+        }
+
+        function nextpage() {
+            location.href = "research.html"
+        }
+    </script>
+
+<body>
+    <form onsubmit="return Validate()" method="post">
+        <marquee>Welcome To This Site Dear</marquee>
+        <div class="para">
+            <h3>Please Enter The Deatails </h3>
+            <div clas="main">
+                <div class="center">
+                    Name:<input type="text" name="" id="nam"><br>
+                    Mobile Number: <input type="tel" value="" id="num">
+                </div>
+                <div class="lower">
+                    Gender: male<input type="radio" name="male" id="larger">
+                    female<input type="radio" name="female" id="larger"><br>
+
+                    <input type="submit" value="Submit" id="ho">
+                </div>
+            </div>
+        </div>
+        <h3>This Was Made BY Saket</h3>
+    </form>
+</body>
+
+</head>

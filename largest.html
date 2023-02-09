@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            window.prompt(("Enter The First Number"+document.getElementsByClassName("number1")));
+            window.prompt("Enter The Second Number"+document.getElementsByClassName("number2"));
+
+            function max()
+            {
+               var number1;
+               var number2;
+                
+                if(number1<number2)
+                {
+                    window.prompt(number1+"Is Greatest");
+                    return true;
+                }
+
+                else(number2<number1)
+                {
+                    window.prompt(number2+"Is Greatest");
+                    return true;
+                }
+
+            }
+            
+        </script>
+        <body>
+            <input type="text" name="n1" class="number1">
+            <input type="text" name="n2" class="number2">
+            <input type="submit" class="sub" onsubmit="return max()">
+        </body>
+    </head>
+</html>

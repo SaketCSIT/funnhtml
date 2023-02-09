@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body
+        {
+            background-image: url("https://cutewallpaper.org/25/animated-wallpaper-loop/1819619615.jpg");
+            width: 1000px;
+            margin-top: 150px;
+            margin-bottom: 270px;
+            margin-right: 500px;
+            margin-left: 260px;
+            align-items: center;
+        }
+        .for
+        {
+            
+            background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: large;
+            font-weight: lighter;
+            margin:auto;
+            clear: both;
+            margin-left: 100px; 
+            margin-right: 100px; 
+            overflow: hidden;
+            align-content: center;
+            align-items: center;
+            
+        }
+        input
+        {
+            border-radius: 5.6px ;
+            background: transparent;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        button
+        {
+            background-color: transparent;
+            border-style: groove;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        a
+        {
+            border: double;
+            color: black;
+        }
+        a
+        {
+            background: transparent;
+        }
+        marquee
+        {
+            font-size: 30px;
+            font-weight: lighter;
+            text-decoration: tomato;
+            background-color: peachpuff;
+        }
+        #a,#s,#d,#f,#g
+        {
+          display: inline-table;           
+        }
+            
+    </style>
+    <script>
+        function Validate()
+        {
+         var name=document.getElementById("name_1").value;
+         var last=document.getElementById("last_name").value;
+         var mob=document.getElementById("mob").value;
+         var pass=document.getElementById("pas").value;
+         var copass=document.getElementById("copas").value;
+         if(name==" ")
+         {
+            alert("Enter The Name");
+            return false;
+         }
+
+         if(last=="")
+         {
+            alert("Enter The Last Name");
+            return false;
+         }
+         
+         if(mob.lenght!=18)
+         {
+            alert("Invalid Number");
+            return false;
+         }
+         if(pass!=copass)
+         {
+            alert("PassWord MisMatch");
+            return false;
+         }
+        
+         return true;
+           
+        
+        }
+    </script>
+    <body>
+    
+        <form class="for" method="post" name="fname" onsubmit="return Validate()">
+            <h1> <FORM:post> Registration Form</FORM:post></h1>
+            
+            Enter The Name:  <input type="text" name="name_1" placeholder="Name" id="a"><br>
+            Enter The Last Name: <input type="text" name="last_name" placeholder="Last Name" id="s"> <br>
+            Enter Mobile No: <input type="number" name="tel" placeholder="Mobile No" id="mob"><br>
+            Enter Password: <input type="password" name="pass" placeholder="PassWord" id="pas"> </br>
+            Confirm Password:<input type="password" name="Confirm" id="copas" placeholder="ConfirmPassword"><br>
+            Enter Email id: <input type="email" method="post" name="ma" placeholder="Mail" id="g"> <br>
+            Enter Date of Birth: <input type="date" name="birthday" name="birth" id="h"> <br>
+            Enter Gender: <input type="radio" value="Male" name="Gender" >Male<input type="radio" value="female" name="Gender"> Female <br>
+            <input type="submit" value="Submit" onclick="AnimationEffect">
+            <marquee behaviour="alt">This Form Is Made By Saket</marquee>
+
+        </form>    
+    </body>
+</head>

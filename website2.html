@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+        <style>
+            {
+            font-family: cursive;
+            background: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000")
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: wheat;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: black;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        #larger {
+            margin-top: 50px;
+        }
+
+        .para {
+            margin: 4em;
+            margin-top: 25px;
+            padding: auto;
+            text-align: center;
+            font-size: 40px;
+            position: relative;
+            font-variant: small-caps;
+        }
+
+        </style>
+        <body>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="https://drive.google.com/file/d/1PigEZfmtdRGs1xP4WE1ZOOdx236cQqD_/view">Dr Strange</a>
+                <a href="https://themoviezflix.co.in/">Movies Flix</a>
+                <a href="#">Third Link</a>
+                <a href="#">Fourt </a>
+            </div>
+        
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <form action="firewall.htm" onsubmit="return Validate()" method="get">
+            
+        </body>
+    </head>
+</html>

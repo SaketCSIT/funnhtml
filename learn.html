@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate()
+        {
+            let a= document.getElementById('name').value;
+            let b= document.getElementById('tel').value;
+            let c= document.getElementById('pass').value;
+            let d= document.getElementById('copass').value;
+
+
+            if(a=="")
+            {
+                alert("Enter the Name");
+                return false;
+            }
+            if(b.length!=10)
+            {
+                alert("Enter valid number");
+                return false;
+            }
+            if(c=="")
+            {
+                alert("Enter password");
+                return false;
+            }
+            if(d=="")
+            {
+                alert("ReType Password");
+                return false;
+            }
+            if(c!=d)
+            {
+                alert("Enter Correct Password");
+                return false;
+            }
+            return true;
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <form action="" method="post" onsubmit="return validate()">
+    <label>Name</label>
+    <input type="text" name="" id="name"><br><br>
+    <label>Mobile</label>
+    <input type="tel" name="" id="tel"><br><br>
+    <label>Password</label>
+    <input type="password" name="" id="pass"><br><br>
+    <label>Confirm Password</label>
+    <input type="password" name="" id="copass"><br><br>
+    <input type="submit" value="Submit"><br><br>
+    <input type="file" name="" id="" image/gif, image/jpeg>
+</form>
+</body>
+</html>

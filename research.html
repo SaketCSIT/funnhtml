@@ -1,0 +1,400 @@
+<html>
+
+<head>
+    <style>
+        body {
+            /* background:url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"); */
+           
+           
+            padding: auto;
+            margin: auto
+        }
+
+        .navbar {
+            background-color: transparent
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 43px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+            font-family: cursive;
+            margin-bottom: -30px;
+            margin-top: 25px;
+            padding: 0px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: black;
+            font-size: 20pt;
+
+        }
+
+        .navbar li a:hover {
+            color: chocolate;
+            text-decoration: underline;
+    
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 9px;
+            font-size: 20pt;
+
+        }
+
+        .search {
+            float: right;
+            padding: 12px 75px;
+            font-size: 20pt;
+        }
+
+        .text {
+            color: rgb(4, 4, 4);
+            text-align: center;
+            background:url("https://img.freepik.com/free-photo/top-view-background-beautiful-white-grey-brown-cream-blue-background_140725-72219.jpg?w=2000");
+            border-radius: 50px;    
+            margin-right: 100px;
+            margin-left: 100px;
+            font-family: cursive;
+            font-size: 45px;
+            height: 70%;
+        }
+
+        .text button {
+            border-radius: 10px;
+            font-size: 25px;
+            background-color: black;
+            color: white;
+            border-color: white;
+            font-size: 50px;
+            size: 50cm;
+            display: inline-block;
+            text-align: center;
+            padding: 15px 32px;
+            box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+        }
+
+        h {
+            font-size: 25px;
+        }
+
+        .text button:hover {
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            border-color: black;
+            font-family: cursive;
+            transform: rotate(6deg);
+            /* box-shadow: 2px 3px #888888; */
+            transition: 1s;
+
+        }
+
+        hr {
+            color: grey;
+            border-radius: 5px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 50px;
+            padding: 0.5px;
+            background-color: grey;
+
+        }
+
+        .lower {
+
+            color: rgb(4, 4, 4);
+            text-align: center;
+            background:url("https://media.istockphoto.com/id/1306943029/photo/stone-background-portrait-backdrop-studio-backdrop.jpg?b=1&s=612x612&w=0&k=20&c=mUgaCysHqewEhRh4yUwFOdTYyTbou_dIBAbOeRSa89U=");
+            border-radius: 45px;
+            margin-right: 100px;
+            margin-left: 100px;
+            font-family: cursive;
+            font-size: 45px;
+            height: 80%;
+            margin-top: 25px;
+        }
+
+
+        .lower h {
+            margin: 40px;
+            font-family: cursive;
+            font-weight: bolder;
+        }
+
+        .lower hr {
+            transform: rotate(90deg);
+            width: auto;
+            margin: auto;
+        }
+
+        .lower img {
+            float: left;
+            height: 100%;
+            border-radius: 50px;
+            cursor: pointer;
+
+        }
+
+        .lower img:hover {
+            transform: rotate(6deg);
+            transition: 0.5s;
+        }
+        h1:hover
+        {
+            font-variant: small-caps;
+        }
+
+        #sec {
+            float: right;
+            width: 450;
+            height: 500;
+            margin-top: 10px;
+            margin-right: 150px;
+
+        }
+
+        #first {
+            height: 500;
+            margin-top: 10px;
+            margin-left: 150px;
+            overflow: hidden;
+        }
+
+        h6 {
+            margin: 200px;
+            font-size: 40px;
+
+        }
+
+        .items {
+
+            color: rgb(000, 000, 000);
+            margin-right: 100px;
+            margin-left: 100px;
+            font-family: cursive;
+            margin-bottom: 80px;
+            margin-top: 80px;
+
+        }
+
+        .items h {
+            padding: 50px;
+
+        }
+
+        .image {
+            overflow: auto;
+            display: flex;
+            margin: auto;
+            flex: content;
+            padding: 50px;
+            background-origin: padding-box;
+            border-radius: 45px;
+            margin-right: 85px;
+
+        }
+
+        .third {
+            background: greenyellow;
+        }
+
+        .fourth {
+            margin-top: 25px;
+            margin-left: 80px;
+            display: flexbox;
+            font-family: cursive;
+            padding: 38px;
+        }
+
+        .fourth h {
+            padding: 38px;
+        }
+
+        .first {
+            padding: 100px;
+            margin: 20px;
+            width: 300px;
+            background:url("https://img.freepik.com/free-vector/watercolor-sugar-cotton-clouds-background_52683-80661.jpg?w=2000");
+            border-radius: 28px;
+        }
+
+        .second h1,.first h1,.third h1
+        {
+            margin-top:-50px;
+            font-size: 35px;
+        }
+        .second {
+            padding: 100px;
+            margin: 20px;
+            width: 300px;
+            background:url("https://img.freepik.com/free-vector/vibrant-pink-watercolor-painting-background_53876-58931.jpg?w=2000");
+            border-radius: 28px;
+            font-size: 20px;
+        }
+
+        .third {
+            padding: 100px;
+            margin: 20px;
+            width: 300px;
+            background:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1KZnkCbbatcRPBUdT931wAtne_aeJcSTOQ&usqp=CAU");
+            border-radius: 28px;
+            font-size: 20px;
+        }
+
+        .third h1,
+        .second h1,
+        .first h1 {
+            text-decoration: underline;
+            
+
+        }
+        #first
+        {
+            margin: auto;
+        }
+        #sec
+        {
+            margin: auto;
+            width: auto;
+        }
+
+        .box {
+
+            display:flex;
+            margin-left: 50px;
+            font-size: 2x;
+            font-size: 20px;
+
+            padding: 50px;
+
+        }
+
+        #buy {
+
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border-color: white;
+
+            margin: auto;
+            width: auto;
+            height: 60;
+    
+            text-overflow: ellipsis;
+            padding: 3px 32px;
+            box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+
+        }
+
+        #buy:hover
+        {
+            background-color: white;
+            color: black;
+            border-color: black;
+            font-family: cursive;
+            transform: rotate(6deg);
+            /* box-shadow: 2px 3px #888888; */
+            transition: 0.5s;
+        }
+    </style>
+    <script>
+        function jump() {
+            location.href = "https://www.canva.com/design/DAFVIT9c7FY/xS6zrQy2kWQBXp8Y8jU4pw/edit"
+        }
+
+        function buy()
+        {
+            location.href="https://www.canva.com/design/DAFVIT9c7FY/xS6zrQy2kWQBXp8Y8jU4pw/edit"
+        }
+    </script>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="research.html">Home</a></li>
+            <li><a href="AboutUS.html">About Us</a></li>
+            <li><a href="Service.html">Service</a></li>
+            <li><a href="aboutfounder.html">About Founder</a></li>
+            <!-- <div class="search">
+                Search Box <input type="search" name="search" id="search" placeholder="Search ">
+            </div> -->
+
+        </ul>
+    </nav>
+    <hr>
+    <div class="text">
+        <h5>Create your</h5>
+        <h1>T-Shirt Design</h1>
+        <button onclick="jump()">
+            <h>Click Here</h>
+        </button>
+    </div>
+    <hr>
+    <div class="items">
+        <h>Our Features:</h>
+        <h>Fast Delivey</h>
+        <h>Customers Satisfaction</h>
+        <h>Good Quality</h>
+    </div>
+    <div class="lower">
+        <h>SAMPLES OF T-SHITRS</h>
+
+        <div class="image">
+
+            <img src="https://prabhubhakti.in/wp-content/uploads/2021/06/Murlidhar-krishna-sketch-black-background-image-white-t-shirt-for-men.jpg"
+                id="first">
+            <button id="buy" onclick="buy()">Buy Now</button>
+            <div class="image1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWjGgoliygGe1wsFiKOXyBn_6_bQpZakFWivP_9gc7Djy40O3ZGEFtuLHDv2e9s6_Cso&usqp=CAU"
+                    id="sec">
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="fourth">
+        <h>Our Network:</h>
+        <h> All India Fabrics </h>
+        <h>Raymond</h>
+        <h>Monte Carlo</h>
+        <h>Cobb Fabrics</h>
+    </div>
+    <div class="box">
+        <div class="first">
+            <h1>All India Fabrics </h1>
+            <p> All India Fabrics We hava a partnership With 
+            </p>
+        </div>
+        <div class="second">
+            <h1>Raymond</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae maiores, debitis molestias
+                asperiores rem suscipit, numquam labore eveniet similique aliquid qui dicta laudantium ad
+                tempora cum beatae, ratione placeat
+            </p>
+        </div>
+        <div class="third">
+            <h1>Cobb Fabrics</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nobis natus. Architecto ad
+                dolor blanditiis eius ipsam ea suscipit voluptates consequatur, placeat soluta odit voluptati
+                bus esse explicabo repudiandae distinctio qui
+            </p>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</head>
+
+</html>
